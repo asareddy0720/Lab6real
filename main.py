@@ -1,7 +1,4 @@
- # file
-
-print('hello world')
-
-print('hello')
+ # Lab 6
 
 hclkjsDhf;lashurweo
+ def main()
