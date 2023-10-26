@@ -1,12 +1,14 @@
 """
 Lab 6
-Authors: Shan Sundal and Arin Sareddy
+Authors: Arin Sareddy and Shan Sundal
 Class: COP3502C
 Section: 22282
-Description: Git hub encode decode lab
+Description: Github encode decode lab
 """
 
 
+# coded by Arin
+# iterates through string and adds three to each number and then returns string
 def encoder(password_input):
     string_result = ''
     for i in password_input:
@@ -15,18 +17,23 @@ def encoder(password_input):
         string_result += str(result)
     return string_result
 
+
+# coded by Shan
 def decoder(password_input):
     pass
 
+
+# displays a menu based on user input
 def main():
     while True:
         print('Menu')
         print('-------------')
         print('1. Encode\n2. Decode\n3. Quit')
         user_input = int(input('Please enter an option: '))
+        # encodes and stores password
         if user_input == 1:
             password_input = input('Please enter your password to encode: ')
-            print('Your passworrd has been encoded and stored!')
+            print('Your password has been encoded and stored!')
             encoded_password = encoder(password_input)
         if user_input == 2:
             decoded_password = decoder(encoded_password)
